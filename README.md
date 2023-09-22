@@ -25,7 +25,7 @@ uvicorn app.main:app --reload
 
 ## How to get access
 Domain:
-*  localhost:8000 or 127.0.0.1:8000
+*  localhost:8000 or 127.0.0.1:8000 (127.0.0.1:8000/docs)
 
 ## Run Docker 🐳
 Docker must be installed :
