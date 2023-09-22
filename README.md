@@ -43,7 +43,7 @@ docker-compose up --build
 *  API documentation is available at http://localhost:8000/docs when the application is running. You can explore and test the endpoints using the Swagger UI.
 
 
-## Curl Requests
+## Curl Requests for Postman
 
 ### Create User
 curl -X POST "http://127.0.0.1:8000/users/create_user/" -H "Content-Type: application/json" -d '{
