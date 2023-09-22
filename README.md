@@ -28,9 +28,10 @@ Domain:
 *  localhost:8000 or 127.0.0.1:8000
 
 ## Run Docker 🐳
-Docker must be installed 
+Docker must be installed :
+docker-compose up --build
 ```shell
-*  docker-compose up --build
+
 
 ## Features:
 *  Save User: Create or update a user in the database.
