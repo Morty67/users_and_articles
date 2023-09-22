@@ -27,14 +27,14 @@ async def get_users_by_age(
     return await service.get_users_by_age(age_threshold)
 
 
-@router.get("/users-by-color/", response_model=List[UserResponse])
+@router.get("/users_by_color/", response_model=List[UserResponse])
 async def get_users_by_color(
     color: str, service: UserService = Depends(get_user_service)
 ):
     return await service.get_users_by_color(color)
 
 
-@router.get("/users-with-more-than-3-articles/")
+@router.get("/users_with_more_than_3_articles/")
 async def get_users_with_more_than_3_articles(
     current_profile: dict = Depends(get_current_profile),
     service: UserService = Depends(get_user_service),

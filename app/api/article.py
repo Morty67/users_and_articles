@@ -6,7 +6,7 @@ from app.utils.dependencies.services import get_article_service
 router = APIRouter()
 
 
-@router.post("/create-article/", response_model=ArticleResponse)
+@router.post("/create_article/", response_model=ArticleResponse)
 async def create_article(
     item: ArticleCreate,
     service: ArticleService = Depends(get_article_service),
