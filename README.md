@@ -41,3 +41,42 @@ docker-compose up --build
 *  Get Unique User Names with More Than 3 Articles: Retrieve unique user names of users who have more than 3 articles. (тут про лише залогіненим користувачам)
 *  This project implements JWT-based authentication for securing API endpoints. To access protected endpoints, users must obtain a valid JWT token by following the authentication process.
 *  API documentation is available at http://localhost:8000/docs when the application is running. You can explore and test the endpoints using the Swagger UI.
+
+
+## Curl Requests
+
+### Create User
+curl -X POST "http://127.0.0.1:8000/users/create_user/" -H "Content-Type: application/json" -d '{
+  "name": "Hello World",
+  "age": 67
+}'
+
+### Create Article
+curl -X POST "http://127.0.0.1:8000/articles/create_article/" -H "Content-Type: application/json" -d '{
+  "text": "string",
+  "color": "red",
+  "owner_name": "Hello"
+}'
+
+### Users Older Than
+curl -X GET "http://127.0.0.1:8000/users/users_older_than/?age_threshold=30"
+
+### Users By Color
+curl -X GET "http://127.0.0.1:8000/users/users_by_color/?color=red"
+
+### Create Profile
+curl -X POST "http://127.0.0.1:8000/profiles/create_profile/" -H "Content-Type: application/json" -d '{
+  "username": "HelloTest4",
+  "email": "test4@example.com",
+  "full_name": "string",
+  "hashed_password": "string"
+}'
+### Login
+curl -X POST "http://127.0.0.1:8000/profiles/login" -d "username=HelloTest&password=string"
+###  Users With More Than 3 Articles
+
+### Users With More Than 3 Articles
+curl -X GET "http://127.0.0.1:8000/users/users_with_more_than_3_articles/" -H "Authorization: Bearer <YOUR TOKEN>"
+
+### Current User Profile
+curl -X GET "http://127.0.0.1:8000/profiles/users/me" -H "Authorization: Bearer <YOUR TOKEN>"
