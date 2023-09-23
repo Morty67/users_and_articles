@@ -73,7 +73,6 @@ curl -X POST "http://127.0.0.1:8000/profiles/create_profile/" -H "Content-Type: 
 }'
 ### Login
 curl -X POST "http://127.0.0.1:8000/profiles/login" -d "username=HelloTest4&password=string"
-###  Users With More Than 3 Articles
 
 ### Users With More Than 3 Articles
 curl -X GET "http://127.0.0.1:8000/users/users_with_more_than_3_articles/" -H "Authorization: Bearer <YOUR TOKEN>"
