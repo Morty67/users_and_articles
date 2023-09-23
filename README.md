@@ -72,7 +72,7 @@ curl -X POST "http://127.0.0.1:8000/profiles/create_profile/" -H "Content-Type: 
   "hashed_password": "string"
 }'
 ### Login
-curl -X POST "http://127.0.0.1:8000/profiles/login" -d "username=HelloTest&password=string"
+curl -X POST "http://127.0.0.1:8000/profiles/login" -d "username=HelloTes4t&password=string"
 ###  Users With More Than 3 Articles
 
 ### Users With More Than 3 Articles
