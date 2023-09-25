@@ -147,3 +147,4 @@ cython_debug/
 .DS_Store
 
 .data
+.pytest_cache
