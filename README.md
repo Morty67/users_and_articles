@@ -18,6 +18,23 @@ source venv/bin/activate (on macOS)
 
 pip install -r requirements.txt
 
+Your settings for DB in .env file:
+
+DB_HOST=YOUR DB_HOST
+DB_PORT=YOUR DB_PORT
+DB_NAME=YOUR DB_NAME
+DB_USER=YOUR DB_USER
+DB_PASS=YOUR DB_PASS
+
+
+DB_HOST_TEST=YOUR DB_HOST_TEST
+DB_PORT_TEST=YOUR DB_PORT_TEST
+DB_NAME_TEST=YOUR DB_NAME_TEST
+DB_USER_TEST=YOUR DB_USER_TEST
+DB_PASS_TEST=YOUR DB_PASS_TEST
+
+JWT_SECRET_KEY=YOUR JWT_SECRET_KEY
+
 alembic upgrade head
 uvicorn app.main:app --reload
 
@@ -29,8 +46,10 @@ Domain:
 
 ## Run Docker 🐳
 Docker must be installed :
-docker-compose up --build
-Run tests with Docker: docker exec -it <container id> bash, pytest app/tests 
+* docker-compose up --build
+## Run tests with Docker:
+* docker exec -it <container id> bash
+* pytest app/tests 
 ```shell
 
 
