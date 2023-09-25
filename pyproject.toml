@@ -1,0 +1,9 @@
+[tool.pytest.ini.options]
+pythonpath = [
+    ".", "app",
+]
+#filterwarnings = [
+#    # Passlib 1.7.4 depends on crypt - https://foss.heptapod.net/python-libs/passlib/-/issues/148
+#    "ignore:'crypt' is deprecated and slated for removal"
+#]
+asyncio_mode = "auto"
