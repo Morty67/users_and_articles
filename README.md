@@ -30,6 +30,7 @@ Domain:
 ## Run Docker 🐳
 Docker must be installed :
 docker-compose up --build
+Run tests with Docker: docker exec -it <container id> bash, pytest app/tests 
 ```shell
 
 
